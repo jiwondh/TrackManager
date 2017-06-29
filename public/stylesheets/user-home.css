@@ -1,0 +1,42 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#menu-logo img{
+  width: 175px;
+  height: auto;
+}
+.main-left{
+  display: inline-block;
+  overflow: scroll;
+}
+.main-right{
+  display: inline-block;
+  margin-left: 225px;
+  margin-top: 25px;
+  width : 100%;
+}
+.trackImage{
+  margin-top: 30px;
+  width: 100%;
+}
+.checkField{
+  margin-top: 10px;
+}
+#user-card{
+
+}
+.simul{
+  height: 470px;
+}
+
+#finishedMajor{
+  overflow: auto;
+}
+#checkMajor{
+  overflow: auto;
+}

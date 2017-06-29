@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/user-home.css' />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src = "/javascripts/user-home.js"></script>
+    <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/gojs/1.7.13/go.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+  </head>
+  <body >
+    <div class="ui left fixed vertical menu main-left">
+      <div class="item" id="menu-logo" data-user=<%= user %> data-name=<%= userName %>>
+        <img class="ui mini image" src="/images/logo2.png" width="175">
+      </div>
+      <div class="item">
+        <div class="header">My Status</div>
+        <div class="menu">
+          <a class="item" id='profile'>프로필</a>
+          <a class="item" id='trackStatus'>나의 트랙 현황</a>
+          <a class="item" id='makecurr'>나의 커리큘럼 만들기</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">My Favorite</div>
+        <div class="menu" id="favorTracks">
+        </div>
+      </div>
+      <div class="item">
+        <div class="header ">All Tracks</div>
+        <div class="menu" id="all-tracks">
+        </div>
+      </div>
+    </div>
+    <div class="main-right">
+      <div class="ui card" id='user-card'>
+        <div class="image">
+          <img src="/images/girl.png">
+        </div>
+        <div class="content">
+          <a class="header"><%= userName%></a>
+          <div class="meta">
+            <span class="date">Joined in 2014</span>
+          </div>
+          <div class="description">
+
+          </div>
+        </div>
+        <div class="extra content">
+          <a>
+            <i class="user icon"></i>
+
+          </a>
+        </div>
+      </div>
+      <div class='ui'><a href='/logout'> 로그아웃<a></div>
+    </div>
+  </body>
+</html>
